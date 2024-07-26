@@ -1,6 +1,6 @@
 package com.example.lms.service;
 
-import com.example.lms.entity.Course;
+
 import com.example.lms.entity.User;
 import com.example.lms.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class UserService {
     public User createUser(User user){
         return userRepository.save(user);
     }
-    public void DeleteUser(Long id){
+    public void deleteUser(Long id){
         userRepository.deleteById(id);
     }
 }
