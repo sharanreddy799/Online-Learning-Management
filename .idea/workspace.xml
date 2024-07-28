@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1595f340-9b82-4dfe-86be-86caad5cc63a" name="Changes" comment=" Added React Project for frontend">
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/LmsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/config/WebConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/AssignmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/CourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/CourseMaterialController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/DiscussionForumController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/EnrollmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/GradeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/InstructorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/PostController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Assignment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/CourseMaterial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/DiscussionForum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Enrollment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Grade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Instructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Post.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/AdminRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/AssignmentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/CommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/CourseMaterialRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/CourseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/DiscussionForumRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/EnrollmentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/GradeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/InstructorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/PostRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/request/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/request/RegisterRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/AssignmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/CourseMaterialService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/CourseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/CustomUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/DiscussionForumService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/EnrollmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/GradeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/InstructorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/PostService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/classes/com/example/lms/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/lms-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/lms-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/com.lms.backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/surefire-reports/TEST-com.example.lms.LmsApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/surefire-reports/com.example.lms.LmsApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.lms.backend/target/test-classes/com/example/lms/LmsApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sharanreddy799&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sharanreddy799/Online-Learning-Management.git&quot;,
+    &quot;accountId&quot;: &quot;11c4e8e1-a77f-4d24-b542-355e7ede806f&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/lms/entity/User.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2jkuEmDHprJR2treuP8EdPXrsXe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.All in lms.executor": "Run",
+    "JUnit.LmsApplicationTests.contextLoads.executor": "Run",
+    "Maven.lms [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.LmsApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/saidev/IdeaProjects/Online-Learning-Management/com.lms.backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5003083" visible="true" />
+      <window_info id="Commit" order="1" weight="0.27821428" />
+      <window_info id="Structure" order="2" sideWeight="0.49969172" side_tool="true" weight="0.32984143" />
+      <window_info id="Pull Requests" order="3" weight="0.24546999" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32999998" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32999998" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.42714286" />
+      <window_info active="true" anchor="bottom" id="Messages" order="5" visible="true" weight="0.33185577" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.42714286" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.38142857" />
+      <window_info anchor="bottom" id="Services" order="8" weight="0.30714285" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.33035713" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.14160517" />
+      <window_info anchor="right" id="Database" order="2" weight="0.1708633" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995343" />
+      <window_info anchor="right" id="Beans" order="5" weight="0.7268566" />
+    </layout>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LmsApplication">
+    <configuration name="All in lms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LmsApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.lms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.lms" />
+      <option name="MAIN_CLASS_NAME" value="com.example.lms.LmsApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="lms [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="LmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="lms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.lms.LmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in lms" />
+      <item itemvalue="JUnit.LmsApplicationTests.contextLoads" />
+      <item itemvalue="Maven.lms [clean,install]" />
+      <item itemvalue="Spring Boot.LmsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in lms" />
+        <item itemvalue="JUnit.LmsApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1595f340-9b82-4dfe-86be-86caad5cc63a" name="Changes" comment="" />
+      <created>1721943287117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721943287117</updated>
+      <workItem from="1721943288201" duration="280000" />
+      <workItem from="1721943601179" duration="11551000" />
+      <workItem from="1721998276186" duration="1554000" />
+      <workItem from="1722015348605" duration="3161000" />
+      <workItem from="1722023458586" duration="8716000" />
+      <workItem from="1722181002975" duration="3467000" />
+      <workItem from="1722186416525" duration="18000" />
+    </task>
+    <task id="LOCAL-00001" summary="Setting Up the Project">
+      <option name="closed" value="true" />
+      <created>1721947956068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721947956068</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Basic Entity Classes">
+      <option name="closed" value="true" />
+      <created>1721948106136</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721948106136</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Repo Interfaces for the Entity classes">
+      <option name="closed" value="true" />
+      <created>1721964406686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721964406686</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added  Service Classes for the Entity classes">
+      <option name="closed" value="true" />
+      <created>1721966004612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721966004612</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added  Controller Classes for the Service classes and Modified typos in service classes">
+      <option name="closed" value="true" />
+      <created>1721966781170</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721966781170</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added request body classes">
+      <option name="closed" value="true" />
+      <created>1721969395279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721969395279</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added extra user methods to support authentication">
+      <option name="closed" value="true" />
+      <created>1721969443292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721969443292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added User Authentication using the AuthController class and SecurityConfig.java to create authentication manager bean">
+      <option name="closed" value="true" />
+      <created>1721969626997</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721969626997</updated>
+    </task>
+    <task id="LOCAL-00009" summary=" Added React Project for frontend">
+      <option name="closed" value="true" />
+      <created>1721999250169</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721999250169</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Setting Up the Project" />
+    <MESSAGE value="Added Basic Entity Classes" />
+    <MESSAGE value="Added Repo Interfaces for the Entity classes" />
+    <MESSAGE value="Added  Service Classes for the Entity classes" />
+    <MESSAGE value="Added  Controller Classes for the Service classes and Modified typos in service classes" />
+    <MESSAGE value="Added SecurityConfig using Spring Security and added extra user service class methods to support login and authentication." />
+    <MESSAGE value="Added request body classes" />
+    <MESSAGE value="Added extra user methods to support authentication" />
+    <MESSAGE value="Added User Authentication using the AuthController class and SecurityConfig.java to create authentication manager bean" />
+    <MESSAGE value=" Added React Project for frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Added React Project for frontend" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

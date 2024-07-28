@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import axios from "axios";
+import { loginUser } from "../services/api";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("/api/auth/login", {
+      const response = await loginUser({
         username,
         password,
       });
