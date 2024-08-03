@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 import { registerUser } from "../services/api"; // Import the axios instance
+import { Link } from "react-router-dom";
+import {
+  TextField,
+  Button,
+  Container,
+  Typography,
+  Box,
+  Select,
+  MenuItem,
+  InputLabel,
+  FormControl,
+} from "@mui/material";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -23,34 +35,69 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <h1>Register</h1>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Role"
-        value={role}
-        onChange={(e) => setRole(e.target.value)}
-      />
-      <button onClick={handleRegister}>Register</button>
-    </div>
+    <Container maxWidth="sm">
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        minHeight="100vh"
+      >
+        <Typography variant="h4" component="h1" gutterBottom>
+          Register
+        </Typography>
+        <TextField
+          label="Username"
+          variant="outlined"
+          fullWidth
+          margin="normal"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <TextField
+          label="Password"
+          variant="outlined"
+          type="password"
+          fullWidth
+          margin="normal"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <TextField
+          label="Email"
+          variant="outlined"
+          fullWidth
+          margin="normal"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <FormControl variant="outlined" fullWidth margin="normal">
+          <InputLabel>Role</InputLabel>
+          <Select
+            value={role}
+            onChange={(e) => setRole(e.target.value)}
+            label="Role"
+          >
+            <MenuItem value="STUDENT">Student</MenuItem>
+            <MenuItem value="INSTRUCTOR">Instructor</MenuItem>
+            <MenuItem value="ADMIN">Admin</MenuItem>
+          </Select>
+        </FormControl>
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          onClick={handleRegister}
+        >
+          Register
+        </Button>
+        <Link to="/login" style={{ textDecoration: "none", marginTop: "1rem" }}>
+          <Button variant="outlined" color="secondary" fullWidth>
+            Sign In
+          </Button>
+        </Link>
+      </Box>
+    </Container>
   );
 };
 

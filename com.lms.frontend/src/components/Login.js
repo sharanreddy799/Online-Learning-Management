@@ -1,6 +1,8 @@
 import { useState } from "react";
 import React from "react";
 import { loginUser } from "../services/api";
+import { Link, Router } from "react-router-dom";
+import Register from "./Register";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -33,6 +35,9 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleLogin}>Login</button>
+      <Link to="/register">
+        <button>Register</button>
+      </Link>
     </div>
   );
 };

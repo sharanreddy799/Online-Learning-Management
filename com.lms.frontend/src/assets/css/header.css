@@ -1,0 +1,56 @@
+/* Header.css */
+
+.header {
+  margin-top: 4ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+  height: 4rem;
+
+  border-radius: 30%;
+  tab-size: 50%;
+}
+
+Link.nav-item {
+  color: black;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #333;
+  width: 80%;
+  border-radius: 30px;
+  height: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: circle;
+  padding: 0;
+  margin: 0;
+  gap: 65px;
+}
+
+.nav-item {
+  margin: 0 15px;
+  font-weight: bolder;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+  background-color: #444;
+  border-radius: 15px;
+}
+
+.nav-item a:hover {
+  color: #333;
+  background-color: #ddd;
+}

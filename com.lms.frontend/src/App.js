@@ -2,22 +2,18 @@ import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import Login from "./components/Login";
-import Home from "./pages/Home";
+import LoginPage from "./components/LoginPage";
 import Register from "./components/Register";
-import CourseDetails from "./pages/CourseDetails";
 import Footer from "./components/Footer";
+import AppRoutes from "./AppRoutes";
 function App() {
   return (
     <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/course/:id" element={<CourseDetails />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/*" element={<AppRoutes />} />
+        <Route path="/" element={<LoginPage />} /> {/* Default to Login */}
       </Routes>
       <Footer />
     </Router>
