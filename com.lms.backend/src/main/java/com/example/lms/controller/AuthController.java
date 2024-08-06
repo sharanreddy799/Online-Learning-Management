@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -68,5 +69,12 @@ public class AuthController {
         userService.enableUser(userId);
         logger.debug("User enabled successfully: {}", userId);
         return ResponseEntity.ok("User enabled successfully");
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping("/unregistered")
+    public ResponseEntity<List<User>> getUnregisteredUsers() {
+        List<User> unregisteredUsers = userService.findUnregisteredUsers();
+        return ResponseEntity.ok(unregisteredUsers);
     }
 }
