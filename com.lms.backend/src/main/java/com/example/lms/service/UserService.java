@@ -8,6 +8,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class UserService {
@@ -42,5 +44,10 @@ public class UserService {
     public User findByUsername(String username) {
         logger.debug("Finding user by username: {}", username);
         return userRepository.findByUsername(username);
+    }
+
+    public List<User> findUnregisteredUsers() {
+        logger.debug("Finding all unregistered users");
+        return userRepository.findByEnabled(false);
     }
 }
