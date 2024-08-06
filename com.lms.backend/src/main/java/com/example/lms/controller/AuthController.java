@@ -1,5 +1,6 @@
 package com.example.lms.controller;
 import com.example.lms.entity.User;
+import com.example.lms.jwt.JwtUtil;
 import com.example.lms.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -8,6 +9,8 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,9 +26,12 @@ public class AuthController {
 
     @Autowired
     private UserService userService;
-
+    @Autowired
+    private JwtUtil jwtUtil;
     @Autowired
     private AuthenticationManager authenticationManager;
+    @Autowired
+    private UserDetailsService userDetailsService;
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody User user) {
@@ -47,6 +53,8 @@ public class AuthController {
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
             );
             SecurityContextHolder.getContext().setAuthentication(authentication);
+            UserDetails userDetails = userDetailsService.loadUserByUsername(user.getUsername());
+            String jwt = jwtUtil.generateToken(userDetails);
             logger.debug("User logged in successfully: {}", user.getUsername());
             User authenticatedUser = userService.findByUsername(user.getUsername());
 
@@ -55,7 +63,7 @@ public class AuthController {
             response.put("role", authenticatedUser.getRole());
             response.put("username", authenticatedUser.getUsername());
             logger.debug("Response Sent:", response);
-            return ResponseEntity.ok("User logged in successfully");
+            return ResponseEntity.ok(new AuthenticationResponse(jwt));
         } catch (Exception e) {
             logger.error("Login failed for user: {}", user.getUsername(), e);
             return ResponseEntity.status(401).body("Login failed");
@@ -76,5 +84,17 @@ public class AuthController {
     public ResponseEntity<List<User>> getUnregisteredUsers() {
         List<User> unregisteredUsers = userService.findUnregisteredUsers();
         return ResponseEntity.ok(unregisteredUsers);
+    }
+
+    static class AuthenticationResponse {
+        private String jwt;
+
+        public AuthenticationResponse(String jwt) {
+            this.jwt = jwt;
+        }
+
+        public String getJwt() {
+            return jwt;
+        }
     }
 }
