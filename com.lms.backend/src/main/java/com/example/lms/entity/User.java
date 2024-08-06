@@ -28,6 +28,6 @@ public class User {
     private Role role;
 
     @Column(nullable = false)
-    private boolean isEnabled = false; // Admin approval
+    private boolean enabled; // Admin approval
 }
 
