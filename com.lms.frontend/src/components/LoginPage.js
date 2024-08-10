@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { loginUser } from "../services/api";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { TextField, Button, Container, Typography, Box } from "@mui/material";
 
 const Login = () => {
@@ -13,8 +13,8 @@ const Login = () => {
         username,
         password,
       });
-
       alert(response);
+      Navigate("/home");
     } catch (error) {
       alert("Error logging in");
     }
